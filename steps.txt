@@ -1,0 +1,12 @@
+1) criar o repositorio no git
+2) clonar o repositorio
+3) entrar no diretorio do projeto com terminal
+4) iniciar o npm (npm init)
+5) iniciar o Express (npm install express --save)
+6) iniciar o EJS (npm install ejs --save)
+7) iniciar o Autoloader Consign (npm install consign --save)
+8) iniciar o Body-parser (npm install body-parser --save)
+9) iniciar o Validator (npm install express-validator --save)
+10) criar pastas estrutura padrao
+11) criar o server.js
+12) criar o app.js
