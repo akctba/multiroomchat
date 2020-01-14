@@ -13,12 +13,10 @@ app.set('io', io);
 
 /* criar a conexao por websocket */
 io.on('connection', function(socket){
-    console.log('New user connected');
+    console.log('New user connected: ' + socket.id);
 
-    socket.on('disconnect', function(){
-        console.log('User disconnected ');
-        
-
+    socket.on('disconnect', () => {
+        console.log('User disconected: ' + socket.id);
     });
 
     socket.on('msgParaServidor', function(data){
@@ -34,6 +32,5 @@ io.on('connection', function(socket){
             {apelido: data.apelido, mensagem: data.mensagem}
         );
 
-        
     });
 });
